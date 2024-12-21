@@ -74,10 +74,14 @@ main {
   opacity: 0.2;
 }
 
+#about {
+  min-height: 100vh;
+}
+
 #projects {
   position: absolute;
-  top: 10000px;
-  justify-content: center;
+  top: 100vh;
+  min-height: 100vh;
 }
 
 /*
