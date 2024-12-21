@@ -1,0 +1,90 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  background: white;
+  color: black 50%;
+  font-family: "Inter", serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  gap: 20px;
+}
+
+button {
+  background: black;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 10px 8px 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: inherit;
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.2;
+}
+li > .low-opacity {
+  cursor: default;
+}
+.name {
+  display: flex;
+  justify-content: left;
+  padding: 35vh 0 22px;
+}
+
+body {
+  min-height: 100vh;
+  width: auto;
+  overscroll-behavior-x: auto;
+  margin: auto;
+}
+
+main {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.low-opacity {
+  opacity: 0.2;
+}
+
+#projects {
+  position: absolute;
+  top: 10000px;
+  justify-content: center;
+}
+
+/*
+#contact {
+
+  position: absolute;
+  bottom: 10000px;
+  justify-content: center;
+}
+*/
