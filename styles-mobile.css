@@ -3,14 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  transition: 0.3s;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-html,
 body {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
   background-color: #fff;
   color: #000;
 }
@@ -19,6 +16,7 @@ a {
   text-decoration: none;
   color: inherit;
   width: inherit;
+  transition: 0.5s;
 }
 
 a:hover {
@@ -26,9 +24,9 @@ a:hover {
 }
 
 .container {
-  padding: 20px;
-  padding-bottom: 200px;
-  width: 100%;
+  padding: 40px;
+  max-width: 100%;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,8 +37,6 @@ a:hover {
   flex-direction: column;
   gap: 24px;
   flex: 1;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .section.active {
@@ -59,7 +55,6 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  width: 100%;
 }
 
 .button-outline {
@@ -70,20 +65,18 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  width: 100%;
 }
 
 .mobile-nav {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 40px);
+  width: 100%;
+  margin: 24px 0;
   padding: 12px;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 16px;
-  position: fixed;
-  bottom: 100px;
-  left: 20px;
-  z-index: 100;
+  position: sticky;
+  bottom: 20px;
 }
 
 .nav-button {
@@ -117,7 +110,6 @@ a:hover {
   height: 8px;
   border-radius: 50%;
   background: #000;
-  flex-shrink: 0;
 }
 
 .circle.green {
@@ -189,10 +181,6 @@ a:hover {
   flex-direction: column;
   gap: 12px;
   width: 100%;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  padding: 0 20px;
-  background: #fff;
-  z-index: 99;
+  margin-top: auto;
+  padding-top: 24px;
 }
